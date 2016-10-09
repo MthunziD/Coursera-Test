@@ -1,0 +1,100 @@
+	* {
+		box-sizing: border-box;
+	}
+	body{
+		
+		height: 100%;
+		width: 100%;
+		}
+	h1 {
+	text-align: center;
+	}
+
+	#box1 {
+	background-color: #A9A9A9;
+	padding:0px 0px 0px 10px; 
+	border: 5px solid black;
+	margin: 20px;
+	width: 300px;
+	float: left;
+	position: relative;
+	overflow: auto;
+	
+	}
+	
+	#box2 {
+	background-color: #A9A9A9;
+	padding:0px 0px 0px 10px; 
+	border: 5px solid black;
+	margin: 20px;
+	width: 300px;
+	clear: right;
+	float: left;
+	position: relative;
+	overflow: auto;
+	
+	
+	}
+	
+	#box3 {
+	background-color: #A9A9A9;
+	padding:0px 0px 0px 10px; 
+	border: 5px solid black;
+	margin: 20px;
+	width: 300px;
+	float: left;
+	float: left;
+	position: relative;
+	overflow: auto;
+	
+	}
+	
+	.content {
+	padding:  10px;
+	clear: right;
+	}
+	
+	#section1 {
+	background-color: #ff0000 ;
+		display: inline;
+		width: 100px;
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+		float: right;
+	
+	}
+	#section2 {
+	background-color: brown ;
+	display: inline;
+	width: 100px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	float: right;
+	}
+	#section3 {
+	background-color: blue ;
+	display: inline;
+	width: 100px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	float: right;
+	}
+	
+
+		@media (min-width: 992px ) { 	
+	#box1{ width:33.%; margin: 20px; position: relative; }
+	#box2{ width: 33.%;margin: 20px; position: static;  } 
+	#box3{ width: 33.%; margin: 20px; position: relative;  }}
+	
+	@media (min-width:768px) and (max-width:991px ) {
+	#box1{width: 44%; margin: 20px; position: static;}
+	#box2{width: 44%; margin:20px; position: static; } 
+	#box3{width: 95%;  margin: 20px; position: relative; float: right; clear: left;}
+		}
+		
+		@media (max-width: 767px ) {
+		#box1{width:95%; margin: 20px; clear: right;} #box2{width: 95%; margin:20px;} #box3{width: 95%; margin: 20px;} }
+		
